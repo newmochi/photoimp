@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>写真収集></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+<h2>写真収集Expressアプリケーション</h2>
+   <a href="upload">写真アップロード</a>	
+     <div id="photos">
+      <% photos.forEach(function(photo) { %>
+        <div class="photo">
+          <h2><%=photo.name%></h2>
+          <a href='/photos/download/<%=photo.id%>'>
+            <img src='/<%=photo.path%>'/>
+          </a>
+        </div>
+      <% }) %>
+    </div>
+    <small>
+    Copyright Hiroyuki Mochizuki.
+  【参考文献 実践Node.jsプログラミング(ISBN978-4-7981-2947-1)】
+    </small>
+</body>
+  <footer>
+ </footer>
+</html>

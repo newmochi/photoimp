@@ -1,0 +1,26 @@
+@charset "utf-8" ;
+/* idセレクタは一意の場所に。メインメニューなど。#abc {〜} */
+/* classセレクタは複数箇所に同じスタイル用。.abc {〜}      */
+
+/* 参考文献から */
+body {
+ padding: 50px;
+ font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a { color: #00B7FF; }
+.photo {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px #ddd;
+}
+.photo h2 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 200;
+}
+.photo img { height: 100px; }
